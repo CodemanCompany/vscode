@@ -1,0 +1,37 @@
+{
+    "deploy.reloaded": {
+        "packages": [
+            {
+                "name": "Whiskey",
+                "files": [
+                    "**"
+                ],
+                "deployOnSave": [
+                    "Tango",
+                ],
+                "exclude": [
+                    ".DS_Store",
+                ],
+                "checkBeforeDeploy": true,
+                "checkBeforePull": true,
+                "fastCheckOnChange": true,
+                "fastCheckOnSave": true,
+                "fastFileCheck": true,
+                "ignoreGitFolder": true
+            }
+        ],
+        "targets": [
+            {
+                "description": "Codeman project",
+                "dir": "",
+                "host": "",
+                "name": "Tango",
+                "port": 22,
+                "privateKey": "",
+                "type": "sftp",
+                "user": "",
+            }
+        ]
+    },
+    "html.format.indentHandlebars": true
+}
